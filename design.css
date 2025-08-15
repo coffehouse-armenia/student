@@ -1,0 +1,241 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    padding: 0;
+    border: none;
+    font-size: 100%;
+    color: #fff;
+    width: 100%;
+    overflow-x: hidden;
+    -webkit-overflow-scrolling: touch;
+    min-height: 100%;
+    font-family: montserrat, montserratarm-light;
+    background: #181818;
+    padding: 20px;
+}
+.page-div{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.page-name{
+    text-align: start;
+    font-size: 20px;
+}
+.abouts{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: start;
+    gap: 20px;
+}
+.about{
+    width: 250px;
+    height: 120px;
+    padding: 20px;
+    background: #373737;
+    border-radius: 15px;
+    margin-top: 40px;
+    font-size: 14px;
+    position: relative;
+}
+.coffe-house-icon{
+    width: 50px;
+    height: 50px;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+}
+.coffe-house-icon img{
+    width: fit-content;
+    height: 100%;
+}
+.heart-icon{
+    width: 30px;
+    height: 30px;
+    background-size: cover;
+    position: absolute;
+    top: -13px;
+    right: 13px;
+}
+.heart-icon img{
+    width: 100%;
+}
+.the-site-continue{
+    position: relative;
+    top: 40px;
+    font-size: 18px;
+}
+.divfortext-h2{
+    position: relative;
+    padding: 20px;
+    background: #373737;
+    border-radius: 15px;
+    margin-top: 20px;
+    font-size: 14px;
+}
+.goal-icon{
+    width: 50px;
+    height: 50px;
+    top: -25px;
+}
+.coffehead{
+    width: 100%;
+    height: fit-content;
+    background-size: cover;
+    margin-top: 40px;
+}
+.coffehead img{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+}
+.text-h3{
+    margin-top: 40px;
+}
+.divfortext-quiz{
+    margin-top: 20px;
+    flex-wrap: wrap;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+}
+.quiz-x{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: start;
+    width: 100%;
+}
+.quiz{
+    width: 100%;
+    padding: 0px 20px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    background: #828282;
+    font-size: 14px;
+}
+.answer{
+    display: flex;
+    gap: 10px;
+    height: max-content;
+}
+.yes, .no{
+    width: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: max-content;
+    height: 60px;
+    font-size: 14px;
+    background: #373737;
+}
+.opacity{
+    opacity: 0.2;
+}
+.x{
+    justify-content: left;
+}
+.ThankYou{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+.thky-icon{
+    width: 30px;
+    height: 30px;
+}
+.thky-icon img{
+    width: 100%;
+    height: 100%;
+}
+@media screen and (max-width: 600px){
+    .quiz-x{
+        position: relative;
+        gap: 0px;
+        margin-top: 15px;
+    }
+    .quiz-x:first-child{
+        margin-top: 0px;
+    }
+    .quiz{
+        width: 100%;
+    }
+    .yes, .no{
+        position: absolute;
+        top: -30px;
+        right: 5px;
+        transform: scale(0.5);
+        width: 60px;
+        height: 60px;
+        border-radius: 15px;
+    }
+    .quiz-x:first-child .yes{
+        background: #ec1e24;
+    }
+    .redquiz .no{
+        background: #ec1e24;
+    }
+    .opacity{
+        display: none;
+    }
+
+    .goal-icon{
+    width: 50px;
+    height: 50px;
+    top: -20px;
+    }
+    .abouts{
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .coffehead img {
+        border-radius: 12px;
+    }
+    .about{
+        width: 100%;
+        top: 0;
+        position: absolute;
+        z-index: 15;
+        margin-top: 20px;
+    }
+    .about-2{
+        top: 25px;
+        position: absolute;
+        border: 2px solid #4c4c4c;
+        width: 90%;
+        z-index: 5;
+    }
+    .about-3{
+        top: 45px;
+        position: absolute;
+        border: 2px solid #4c4c4c;
+        width: 80%;
+        z-index: 3;
+    }
+    .about-1, .about-2, .about-3{
+        box-shadow: 0px 10px 20px .2px #181818;
+        transition: width 0.6s, top 0.6s, border 0.6s, position 0.6s;
+    }
+    .the-site-continue{
+        position: relative;
+        top: 220px;
+        transition: top 0.6s;
+        /* 500px */
+    }
+    
+}
